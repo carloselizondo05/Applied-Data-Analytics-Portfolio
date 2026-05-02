@@ -14,30 +14,46 @@
 
 ## 📚 Assignments
 
-### Assignment 1: Survival Analysis & Probability Modeling
+### [Assignment 1: Survival Analysis & Probability Modeling](./CIND123/CIND123%20A1/CIND_123_Assignment_1%20(2)%20(1).ipynb)
 ![Individual](https://img.shields.io/badge/type-Individual-1565c0)
 
 **Overview:** Applied core data analytics techniques across two distinct problem domains — passenger survival analysis and clinical probability modeling — using the Titanic dataset and two independent probability scenarios.
 
 Conducted structured exploratory analysis on the Titanic passenger dataset: extracted and filtered subsets, imputed 263 missing age values using median substitution, computed survival rates by passenger class (Class 1: 61.9%, Class 2: 43.0%, Class 3: 25.5%), and visualized fare distribution by sex using boxplots and mean aggregation. Applied conditional filtering logic to identify specific passenger profiles meeting multi-variable criteria. In the probability section, modeled medication dosage error rates using the Binomial distribution to estimate the likelihood of five or more incorrectly prepared doses in a daily batch of 100, and applied the Poisson distribution to model complaint volume at a call center given a known hourly arrival rate.
 
+<p align="center">
+  <img src="survival_by_class.png" width="400" title="Survival Rate by Class">
+  <img src="fare_boxplot.png" width="400" title="Fare Distribution by Sex">
+</p>
+
 **Tech stack:** Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy), Jupyter Notebook
 
 **Key result:** Class 1 passengers were 2.4x more likely to survive than Class 3; binomial and Poisson models produced closed-form probability estimates validated against intuitive interpretations of the underlying processes.
-
+* **Data Cleaning:** Successfully imputed 263 missing age values using median substitution for more accurate modeling.
 ---
 
-### Assignment 2: Regression, Correlation & Monte Carlo Simulation
+### [Assignment 2: Regression, Correlation & Monte Carlo Simulation](./CIND123/CIND123%20A2/Assignment_2.ipynb)
 ![Individual](https://img.shields.io/badge/type-Individual-1565c0)
 
 **Overview:** Applied inferential statistics and predictive modeling across three areas: normal distribution analysis, linear regression on academic and crime data, and Monte Carlo simulation for probability estimation.
 
 Modeled smartphone battery life under a normal distribution, computing tail probabilities, interval probabilities, and the 5th percentile threshold using SciPy. Built a least-squares linear regression model on student grade data, visualized the regression line, and generated predictions for new midterm scores. On a North Carolina county-level crime dataset, compared two regression models predicting conviction probability using log-transformed vs. raw police per capita as predictors — finding the raw model explained 20.8% of variance vs. 14.2% for the log version — and computed Pearson correlation coefficients to assess relationships between conviction, arrest, prison sentence, and tax variables. Concluded with a Monte Carlo simulation of 100,000 trials to estimate the probability of rolling more than five even numbers in 20 die rolls, validating the result against the theoretical Binomial value with a difference of 0.0001.
 
+<p align="center">
+  <img src="CIND123/CIND123%20A2/grades_regression.png" width="400">
+  <img src="CIND123/CIND123%20A2/crime_correlation_heatmap.png" width="400">
+</p>
+<p align="center">
+  <img src="CIND123/CIND123%20A2/battery_distribution.png" width="400">
+  <img src="CIND123/CIND123%20A2/monte_carlo_distribution.png" width="400">
+</p>
+
 **Tech stack:** Python (Pandas, NumPy, SciPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn), Jupyter Notebook
 
 **Key result:** Monte Carlo estimate converged to within 0.01% of the theoretical Binomial probability across 100,000 trials; police per capita was identified as a statistically significant positive predictor of conviction probability (p < 0.001) while metropolitan area was a significant negative predictor across both models.
-
+* **Predictive Modeling:** Developed a least-squares regression ($y = 9.58 + 0.66x$) explaining 20.8% of the variance in conviction probability.
+* **Simulation Accuracy:** Monte Carlo estimate ($n=100,000$) converged to within **0.01%** of the theoretical Binomial probability.
+* **Statistical Significance:** Identified police per capita as a statistically significant positive predictor of conviction probability ($p < 0.001$).
 ---
 
 ## ⚠️ Limitations & Future Work
