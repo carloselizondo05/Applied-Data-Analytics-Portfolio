@@ -12,7 +12,7 @@
 
 ---
 
-## 📚 Assignments
+## 📂 Featured Projects
 
 ### [Assignment 1: Survival Analysis & Probability Modeling](./CIND123/CIND123%20A1/Assignment_1.ipynb)
 ![Individual](https://img.shields.io/badge/type-Individual-1565c0)
