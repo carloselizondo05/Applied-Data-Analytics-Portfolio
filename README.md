@@ -1,4 +1,8 @@
-# CIND123 — Data Analytics: Basic Methods
+# Applied Data Analytics Portfolio
+
+---
+
+## CIND123 — Data Analytics: Basic Methods
 **Toronto Metropolitan University** · Winter 2026
 
 > Covers foundational statistical and analytical methods for data science, including probability distributions, regression modeling, correlation analysis, and simulation techniques applied to real-world datasets.
@@ -62,10 +66,11 @@ Modeled smartphone battery life under a normal distribution, computing tail prob
 
 **Tech stack:** Python (Pandas, NumPy, SciPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn), Jupyter Notebook
 
-**Key result:** Monte Carlo estimate converged to within 0.01% of the theoretical Binomial probability across 100,000 trials; police per capita was identified as a statistically significant positive predictor of conviction probability (p < 0.001) while metropolitan area was a significant negative predictor across both models.
-* **Predictive Modeling:** Developed a least-squares regression ($y = 9.58 + 0.66x$) explaining 20.8% of the variance in conviction probability.
+**Key Result:** Successfully validated a Monte Carlo simulation against theoretical models and identified $polpc$ and $smsa$ as primary drivers of conviction probability.
+
+* **Predictive Modeling:** Developed a least-squares regression model for grade prediction ($y = 9.58 + 0.66x$) and a crime model (polpc + smsa) explaining **20.8%** of the variance in conviction probability.
 * **Simulation Accuracy:** Monte Carlo estimate ($n=100,000$) converged to within **0.01%** of the theoretical Binomial probability.
-* **Statistical Significance:** Identified police per capita as a statistically significant positive predictor of conviction probability ($p < 0.001$).
+* **Statistical Significance:** Identified police per capita as a significant positive predictor ($p < 0.001$), while metropolitan area ($smsa$) was a significant negative predictor across both models.
 ---
 
 ## ⚠️ Limitations & Future Work
