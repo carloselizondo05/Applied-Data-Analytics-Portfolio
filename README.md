@@ -1,57 +1,48 @@
-# CIND123_Data_Analytics_TMU
-# [Project Title]
+# CIND123 — Data Analytics: Basic Methods
+**Toronto Metropolitan University** · Winter 2026
 
-## 🫥 Executive Summary
-> *The elevator pitch: 2-3 sentences on what this project is and why it matters.*
-
----
-
-## 📝 Project Overview & Features
-**Main Task:** [State the primary problem this project solves.]
-
-**Core Features:**
-* **Feature 1:** [e.g., Automated data cleaning pipeline.]
-* **Feature 2:** [e.g., Predictive modeling using Random Forest.]
-* **Feature 3:** [e.g., Interactive Tableau dashboard for stakeholder review.]
+> Covers foundational statistical and analytical methods for data science, including probability distributions, regression modeling, correlation analysis, and simulation techniques applied to real-world datasets.
 
 ---
 
-## ⛏️ Tech Stack & Resources
-* **Data Analytics:** [e.g., Python (Pandas, Scikit-Learn), SQL, R]
-* **Visualization:** [e.g., Tableau, Matplotlib, Power BI]
-* **APIs/Datasets:** [Link to the data source or mention the API used]
+## 📚 Assignments
+
+### Assignment 1: Survival Analysis & Probability Modeling
+![Individual](https://img.shields.io/badge/type-Individual-1565c0)
+
+**Overview:** Applied core data analytics techniques across two distinct problem domains — passenger survival analysis and clinical probability modeling — using the Titanic dataset and two independent probability scenarios.
+
+Conducted structured exploratory analysis on the Titanic passenger dataset: extracted and filtered subsets, imputed 263 missing age values using median substitution, computed survival rates by passenger class (Class 1: 61.9%, Class 2: 43.0%, Class 3: 25.5%), and visualized fare distribution by sex using boxplots and mean aggregation. Applied conditional filtering logic to identify specific passenger profiles meeting multi-variable criteria. In the probability section, modeled medication dosage error rates using the Binomial distribution to estimate the likelihood of five or more incorrectly prepared doses in a daily batch of 100, and applied the Poisson distribution to model complaint volume at a call center given a known hourly arrival rate.
+
+**Tech stack:** Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy), Jupyter Notebook
+
+**Key result:** Class 1 passengers were 2.4x more likely to survive than Class 3; binomial and Poisson models produced closed-form probability estimates validated against intuitive interpretations of the underlying processes.
 
 ---
 
-## 🧑‍💻 Getting Started
-**Setup Instructions:**
-1. Clone the repo: `git clone https://github.com/yourusername/reponame.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the analysis: `python main.py` or open `notebook.ipynb`
+### Assignment 2: Regression, Correlation & Monte Carlo Simulation
+![Individual](https://img.shields.io/badge/type-Individual-1565c0)
+
+**Overview:** Applied inferential statistics and predictive modeling across three areas: normal distribution analysis, linear regression on academic and crime data, and Monte Carlo simulation for probability estimation.
+
+Modeled smartphone battery life under a normal distribution, computing tail probabilities, interval probabilities, and the 5th percentile threshold using SciPy. Built a least-squares linear regression model on student grade data, visualized the regression line, and generated predictions for new midterm scores. On a North Carolina county-level crime dataset, compared two regression models predicting conviction probability using log-transformed vs. raw police per capita as predictors — finding the raw model explained 20.8% of variance vs. 14.2% for the log version — and computed Pearson correlation coefficients to assess relationships between conviction, arrest, prison sentence, and tax variables. Concluded with a Monte Carlo simulation of 100,000 trials to estimate the probability of rolling more than five even numbers in 20 die rolls, validating the result against the theoretical Binomial value with a difference of 0.0001.
+
+**Tech stack:** Python (Pandas, NumPy, SciPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn), Jupyter Notebook
+
+**Key result:** Monte Carlo estimate converged to within 0.01% of the theoretical Binomial probability across 100,000 trials; police per capita was identified as a statistically significant positive predictor of conviction probability (p < 0.001) while metropolitan area was a significant negative predictor across both models.
 
 ---
 
-## 📊 Results & Recommendations
-> *Insert your key visual here to show the outcome.*
-![Key Result Visualization](./images/main_result.png)
+## ⚠️ Limitations & Future Work
 
-**Recommendations:**
-* [Actionable insight 1 based on your data.]
-* [Actionable insight 2 based on your data.]
-
----
-
-## ⚠️ Limitations & Future Development
-* **Limitations:** [Mention data biases, missing info, or scope constraints.]
-* **Future Work:** [New questions to explore or new methods to analyze.]
+- The crime dataset regression models explain at most ~21% of variance in conviction probability, indicating significant unmodeled factors (socioeconomic conditions, judicial resources, etc.).
+- Monte Carlo precision improves with trial count — the 50-run mean approach further reduces variance and could be extended to adaptive stopping criteria.
+- Future work could explore multiple regression with interaction terms on the crime data to improve predictive power beyond the two-predictor models used here.
 
 ---
 
 ## 🤝 Contributing & License
-* **Contributions:** If you have suggestions or want to report an issue, please open a pull request or an issue ticket.
-* **License:** This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
+Suggestions and feedback welcome — open an issue or pull request.
 
-## 📓 Development Process
-For the "behind-the-scenes" on decision-making, roadblocks, and methodology changes, see the [Development Journal](./DEVELOPMENT_JOURNAL.md).
+Licensed under the [MIT License](LICENSE).
