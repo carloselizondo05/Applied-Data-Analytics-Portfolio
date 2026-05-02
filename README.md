@@ -5,6 +5,13 @@
 
 ---
 
+## 🛠 Skills & Tools
+**Languages:** Python  
+**Libraries:** Pandas, NumPy, SciPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn  
+**Techniques:** Survival Analysis, Probability Modeling (Binomial/Poisson), Linear Regression, Monte Carlo Simulation
+
+---
+
 ## 📚 Assignments
 
 ### Assignment 1: Survival Analysis & Probability Modeling
