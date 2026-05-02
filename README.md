@@ -47,15 +47,15 @@ Conducted structured exploratory analysis on the Titanic passenger dataset: extr
 Modeled smartphone battery life under a normal distribution, computing tail probabilities, interval probabilities, and the 5th percentile threshold using SciPy. Built a least-squares linear regression model on student grade data, visualized the regression line, and generated predictions for new midterm scores. On a North Carolina county-level crime dataset, compared two regression models predicting conviction probability using log-transformed vs. raw police per capita as predictors — finding the raw model explained 20.8% of variance vs. 14.2% for the log version — and computed Pearson correlation coefficients to assess relationships between conviction, arrest, prison sentence, and tax variables. Concluded with a Monte Carlo simulation of 100,000 trials to estimate the probability of rolling more than five even numbers in 20 die rolls, validating the result against the theoretical Binomial value with a difference of 0.0001.
 
 <p align="center">
-  <img src="grades_regression.png" width="400">
-  <img src="crime_correlation_heatmap.png" width="400">
+  <img src="CIND123/CIND123%20A2/grades_regression.png" width="400">
+  <img src="CIND123/CIND123%20A2/crime_correlation_heatmap.png" width="400">
   <br>
   <i>Figure 3 & 4: (Left) Linear regression model for grade prediction; (Right) Correlation matrix of county-level crime variables.</i>
 </p>
 
 <p align="center">
-  <img src="battery_distribution.png" width="400">
-  <img src="monte_carlo_distribution.png" width="400">
+  <img src="CIND123/CIND123%20A2/battery_distribution.png" width="400">
+  <img src="CIND123/CIND123%20A2/monte_carlo_distribution.png" width="400">
   <br>
   <i>Figure 5 & 6: (Left) Normal distribution curve for battery life; (Right) Monte Carlo simulation results vs. theoretical Binomial PMF.</i>
 </p>
