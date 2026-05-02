@@ -14,7 +14,7 @@
 
 ## 📚 Assignments
 
-### [Assignment 1: Survival Analysis & Probability Modeling](./CIND123/CIND123%20A1/CIND_123_Assignment_1%20(2)%20(1).ipynb)
+### [Assignment 1: Survival Analysis & Probability Modeling](./CIND123/CIND123%20A1/Assignment_1.ipynb)
 ![Individual](https://img.shields.io/badge/type-Individual-1565c0)
 
 **Overview:** Applied core data analytics techniques across two distinct problem domains — passenger survival analysis and clinical probability modeling — using the Titanic dataset and two independent probability scenarios.
@@ -22,8 +22,15 @@
 Conducted structured exploratory analysis on the Titanic passenger dataset: extracted and filtered subsets, imputed 263 missing age values using median substitution, computed survival rates by passenger class (Class 1: 61.9%, Class 2: 43.0%, Class 3: 25.5%), and visualized fare distribution by sex using boxplots and mean aggregation. Applied conditional filtering logic to identify specific passenger profiles meeting multi-variable criteria. In the probability section, modeled medication dosage error rates using the Binomial distribution to estimate the likelihood of five or more incorrectly prepared doses in a daily batch of 100, and applied the Poisson distribution to model complaint volume at a call center given a known hourly arrival rate.
 
 <p align="center">
-  <img src="survival_by_class.png" width="400" title="Survival Rate by Class">
-  <img src="fare_boxplot.png" width="400" title="Fare Distribution by Sex">
+  <img src="CIND123/CIND123%20A1/survival_by_class.png" width="400">
+  <br>
+  <i>Figure 1: Survival rates across passenger classes, highlighting the significant advantage held by First Class passengers.</i>
+</p>
+
+<p align="center">
+  <img src="CIND123/CIND123%20A1/Distribution_of_Fare_by_Sex.png" width="400">
+  <br>
+  <i>Figure 2: Distribution of fares paid by gender, revealing outliers and median cost differences.</i>
 </p>
 
 **Tech stack:** Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy), Jupyter Notebook
@@ -32,7 +39,7 @@ Conducted structured exploratory analysis on the Titanic passenger dataset: extr
 * **Data Cleaning:** Successfully imputed 263 missing age values using median substitution for more accurate modeling.
 ---
 
-### [Assignment 2: Regression, Correlation & Monte Carlo Simulation](./CIND123/CIND123%20A2/Assignment_2.ipynb)
+### [Assignment 2: Regression, Correlation & Monte Carlo Simulation](./Assignment_2.ipynb)
 ![Individual](https://img.shields.io/badge/type-Individual-1565c0)
 
 **Overview:** Applied inferential statistics and predictive modeling across three areas: normal distribution analysis, linear regression on academic and crime data, and Monte Carlo simulation for probability estimation.
@@ -40,12 +47,17 @@ Conducted structured exploratory analysis on the Titanic passenger dataset: extr
 Modeled smartphone battery life under a normal distribution, computing tail probabilities, interval probabilities, and the 5th percentile threshold using SciPy. Built a least-squares linear regression model on student grade data, visualized the regression line, and generated predictions for new midterm scores. On a North Carolina county-level crime dataset, compared two regression models predicting conviction probability using log-transformed vs. raw police per capita as predictors — finding the raw model explained 20.8% of variance vs. 14.2% for the log version — and computed Pearson correlation coefficients to assess relationships between conviction, arrest, prison sentence, and tax variables. Concluded with a Monte Carlo simulation of 100,000 trials to estimate the probability of rolling more than five even numbers in 20 die rolls, validating the result against the theoretical Binomial value with a difference of 0.0001.
 
 <p align="center">
-  <img src="CIND123/CIND123%20A2/grades_regression.png" width="400">
-  <img src="CIND123/CIND123%20A2/crime_correlation_heatmap.png" width="400">
+  <img src="grades_regression.png" width="400">
+  <img src="crime_correlation_heatmap.png" width="400">
+  <br>
+  <i>Figure 3 & 4: (Left) Linear regression model for grade prediction; (Right) Correlation matrix of county-level crime variables.</i>
 </p>
+
 <p align="center">
-  <img src="CIND123/CIND123%20A2/battery_distribution.png" width="400">
-  <img src="CIND123/CIND123%20A2/monte_carlo_distribution.png" width="400">
+  <img src="battery_distribution.png" width="400">
+  <img src="monte_carlo_distribution.png" width="400">
+  <br>
+  <i>Figure 5 & 6: (Left) Normal distribution curve for battery life; (Right) Monte Carlo simulation results vs. theoretical Binomial PMF.</i>
 </p>
 
 **Tech stack:** Python (Pandas, NumPy, SciPy, Scikit-learn, Statsmodels, Matplotlib, Seaborn), Jupyter Notebook
