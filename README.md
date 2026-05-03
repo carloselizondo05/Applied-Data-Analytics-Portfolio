@@ -43,7 +43,7 @@ Conducted structured exploratory analysis on the Titanic passenger dataset: extr
 * **Data Cleaning:** Successfully imputed 263 missing age values using median substitution for more accurate modeling.
 ---
 
-### [Assignment 2: Regression, Correlation & Monte Carlo Simulation](./Assignment_2.ipynb)
+### [Assignment 2: Regression, Correlation & Monte Carlo Simulation](CIND123/CIND123 A2/Assignment_2.ipynb)
 ![Individual](https://img.shields.io/badge/type-Individual-1565c0)
 
 **Overview:** Applied inferential statistics and predictive modeling across three areas: normal distribution analysis, linear regression on academic and crime data, and Monte Carlo simulation for probability estimation.
